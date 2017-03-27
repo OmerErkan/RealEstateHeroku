@@ -21,12 +21,12 @@ public class AppController {
     UserService userService;
 
 
-    @RequestMapping(value="/loggin", method=RequestMethod.GET)
+    @RequestMapping(value="/", method=RequestMethod.GET)
     public String index(User user) {
         return "login";
     }
 
-    @RequestMapping(value = "/loggin", method = RequestMethod.POST)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     public String addNewPost(@Valid User user, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "index";
