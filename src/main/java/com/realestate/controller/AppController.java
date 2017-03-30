@@ -2,6 +2,8 @@ package com.realestate.controller;
 
 import com.realestate.model.User;
 import com.realestate.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,16 +21,22 @@ import javax.validation.Valid;
 public class AppController {
     @Autowired
     UserService userService;
+    static Logger logger = LoggerFactory.getLogger(AppController.class);
 
 
     @RequestMapping(value="/loggin", method=RequestMethod.GET)
     public String index(User user) {
+        logger.error("Eror1");
+        System.out.println("Erro2");
+
         return "login";
     }
 
     @RequestMapping(value = "/loggin", method = RequestMethod.POST)
     public String addNewPost(@Valid User user, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
+
+            logger.error("Eror1");
             return "index";
         }
       if (user.getUsername().equals("omer")){
