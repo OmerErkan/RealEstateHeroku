@@ -24,7 +24,7 @@ public class AppController {
     static Logger logger = LoggerFactory.getLogger(AppController.class);
 
 
-    @RequestMapping(value="/loggin", method=RequestMethod.GET)
+    @RequestMapping(value="/login", method=RequestMethod.GET)
     public String index(User user) {
         logger.error("Eror1");
         System.out.println("Erro2");
@@ -32,7 +32,7 @@ public class AppController {
         return "login";
     }
 
-    @RequestMapping(value = "/loggin", method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String addNewPost(@Valid User user, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
 
@@ -47,6 +47,8 @@ public class AppController {
 
         return "404";
     }
+
+
 //    @RequestMapping(value = "/", method = RequestMethod.GET)
 //    public String index() {
 //        return "alerts";

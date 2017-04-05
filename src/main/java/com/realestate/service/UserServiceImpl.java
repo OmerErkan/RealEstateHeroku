@@ -1,5 +1,6 @@
 package com.realestate.service;
 
+import com.realestate.model.BannerAd;
 import com.realestate.model.CorpUser;
 import com.realestate.model.User;
 import com.realestate.repository.UserRepository;
@@ -16,6 +17,7 @@ public class UserServiceImpl implements UserService {
 
     private static List<User> users;
     private static List<CorpUser> corpUsers;
+    private static List<BannerAd> bannerAds;
 
     @Autowired
     private UserRepository userRepository;
@@ -44,5 +46,10 @@ public class UserServiceImpl implements UserService {
 
         userRepository.save(user);
 
+    }
+
+    @Override
+    public void addBanner(BannerAd bannerAd) {
+        bannerAds.add(bannerAd);
     }
 }

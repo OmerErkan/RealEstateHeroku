@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -613,11 +613,11 @@
 
 									<label for="country">Country</label>
                                         <select id="country" class="show-menu-arrow selectpicker">
-                                            <option value="usa">United States</option>
-                                            <option value="turkei">Turkei</option>
-                                            <option value="germany">Germany</option>
-                                            <option value="israel">Israel</option>
-                                            <option value="holland">Holland</option>
+                                            <option value="">United States</option>
+                                            <option th:each="country : ${countries}"
+                                                    th:value="${country.countryCode}"
+                                                    th:text="${country.countryCode}+' : '+${country.countryName}"></option>
+
                                         </select>
                                     <label for="location">Location</label>
                                         <select id="location" class="show-menu-arrow selectpicker">

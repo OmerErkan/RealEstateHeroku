@@ -1,5 +1,6 @@
 package com.realestate.service;
 
+import com.realestate.model.BannerAd;
 import com.realestate.model.CorpUser;
 import com.realestate.model.User;
 
@@ -13,4 +14,5 @@ public interface UserService {
 
     public void save(User user);
     public void save(CorpUser user);
+    public void addBanner(BannerAd bannerAd);
 }
