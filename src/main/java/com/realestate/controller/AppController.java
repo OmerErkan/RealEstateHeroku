@@ -59,7 +59,7 @@ public class AppController {
         return "index";
     }
 
-    @RequestMapping(value = "/loggin", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) {
 
         if (error != null) {
