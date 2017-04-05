@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dde3b132-180f-48ec-b152-923197c809a2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/realestate/controller/AppController.java" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/controller/AppController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +35,8 @@
       <file leaf-file-name="AppController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/realestate/controller/AppController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="67" column="53" lean-forward="false" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+            <state relative-caret-position="226">
+              <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -139,7 +140,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test" />
+        <entry key="$PROJECT_DIR$" value="develop2" />
       </map>
     </option>
   </component>
@@ -865,7 +866,7 @@
       <workItem from="1490630222982" duration="534000" />
       <workItem from="1490694223085" duration="193000" />
       <workItem from="1490704938942" duration="2124000" />
-      <workItem from="1491377677972" duration="176000" />
+      <workItem from="1491377677972" duration="286000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1491377709458</created>
@@ -874,11 +875,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491377709458</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1491377901948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491377901948</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19897000" />
+    <option name="totallyTimeSpent" value="20007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="256" y="-1071" width="1440" height="1052" extended-state="0" />
@@ -1284,8 +1292,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/realestate/controller/AppController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="67" column="53" lean-forward="false" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+        <state relative-caret-position="226">
+          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding />
         </state>
       </provider>
