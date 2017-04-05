@@ -41,7 +41,7 @@ public class AppController {
         }
       if (user.getUsername().equals("omer")){
             if (user.getPassword().equals("1234")){
-                return "alerts";
+                return "list-property";
             }
       }
 
