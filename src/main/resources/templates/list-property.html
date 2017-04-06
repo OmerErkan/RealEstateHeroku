@@ -612,11 +612,10 @@
                                         </select>
 
 									<label for="country">Country</label>
-                                        <select id="country" class="show-menu-arrow selectpicker">
-                                            <option value="">United States</option>
-                                            <option th:each="country : ${countries}"
-                                                    th:value="${country.countryCode}"
-                                                    th:text="${country.countryCode}+' : '+${country.countryName}"></option>
+                                        <select id="country"  class="show-menu-arrow selectpicker">
+                                            <option th:each="operator : ${operators}"
+                                                    th:value="${operator}"
+                                                    th:text="${operator}"></option>
 
                                         </select>
                                     <label for="location">Location</label>

@@ -16,11 +16,21 @@ public class User {
     private String mobilNumber;
 
     private String name;
-    private String middleName;
+   private String middleName;
     private String surname;
     private String password;
+    private String confirmPassword;
     private String username;
     //private Set<Role> roles;
+
+
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
+    }
 
     public String getCountry() {
         return country;

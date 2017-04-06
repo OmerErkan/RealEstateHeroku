@@ -4,6 +4,7 @@ import com.realestate.model.CorpUser;
 import com.realestate.model.User;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,8 +14,8 @@ import java.util.List;
 @Service
 public class UserRepository {
 
-    private List<User> users;
-    private List<CorpUser> corpUsers;
+    private List<User> users = new ArrayList<>();
+    private List<CorpUser> corpUsers  = new ArrayList<>();
 
     public User findByUsername(String username) {
         for (User user : users) {
